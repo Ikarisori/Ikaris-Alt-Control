@@ -1,0 +1,30 @@
+getgenv().Host = {
+    ['Main'] = 0000000000 -- Requires USERID
+}
+
+getgenv().Alts = { -- Iduser requieres
+    ['Alt1'] = 0000000000, -- crasher
+    ['Alt2'] = 0000000000,
+    ['Alt3'] = 0000000000,
+    ['Alt4'] = 0000000000,
+    ['Alt5'] = 0000000000,
+    ['Alt6'] = 0000000000,
+} -- You can put as much alts as you wish
+
+getgenv().DroppingSettings = {
+    ['AdvertMessage'] = 'Ikaris.dhc', -- Spam message
+    ['TimePerMessage'] = 2, -- Time per message 
+}
+
+getgenv().Settings = {
+    wait_for_character = true,
+    prefix = '!', -- Prefix for chat cmds
+    fps_capped = true, -- 
+    fps_cap = 5, -- Sets fpscap 
+    disable_3d_rendering = true, -- Improves cpu usage 
+    auto_mask = false, -- Buys and wears a mask upon execution
+    teleport_to_main_on_exec = false, -- Teleports the alt to your main
+    webhook_code = 'putlinkhere' -- for checking how much cash alts have; example "953533426705768518/KInaaBdBF0nFnf7BfNas7-M9cEKUheTz8AmvtS5-nf_Aa2nx-XhiNFUl-cIlR"
+}
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Ikarisori/Ikaris-Alt-Control/84d0d7ded8c94f41f4972460cbd6c099d188c3ce/alt1'))()
